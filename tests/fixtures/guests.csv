@@ -1,0 +1,4 @@
+name,groupName,vip,child,accessibility,notes,tableNumber,seatLabel
+Ana Silva,Family,true,false,false,Needs aisle view,1,1
+Ravi Patel,Friends,false,false,true,Wheelchair access,1,2
+Maya Chen,Friends,false,true,false,Child meal,1,3

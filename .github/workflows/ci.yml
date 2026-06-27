@@ -1,0 +1,48 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      run_e2e:
+        description: Run optional Playwright smoke tests
+        required: false
+        default: "false"
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Typecheck
+        run: npm run typecheck
+
+      - name: Unit tests
+        run: npm run test
+
+      - name: Build
+        run: npm run build
+
+      - name: Install Playwright browsers
+        if: ${{ (github.event_name == 'workflow_dispatch' && inputs.run_e2e == 'true') || env.RUN_E2E == 'true' }}
+        run: npx playwright install --with-deps chromium
+
+      - name: Playwright smoke tests
+        if: ${{ (github.event_name == 'workflow_dispatch' && inputs.run_e2e == 'true') || env.RUN_E2E == 'true' }}
+        run: npm run e2e

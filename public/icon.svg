@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Wedding Seat Map">
+  <rect width="128" height="128" rx="18" fill="#0f766e"/>
+  <circle cx="64" cy="54" r="26" fill="#fff" opacity=".96"/>
+  <circle cx="31" cy="54" r="10" fill="#f4c95d"/>
+  <circle cx="97" cy="54" r="10" fill="#f4c95d"/>
+  <circle cx="64" cy="91" r="10" fill="#f4c95d"/>
+  <path d="M45 55h38M64 36v38" stroke="#0f766e" stroke-width="7" stroke-linecap="round"/>
+</svg>

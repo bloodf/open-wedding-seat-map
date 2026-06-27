@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 1,
+  "id": "scene_fixture_reception",
+  "name": "Fixture Reception",
+  "updatedAt": "2026-01-01T00:00:00.000Z",
+  "locale": "en",
+  "canvas": {
+    "width": 900,
+    "height": 620,
+    "gridSize": 24,
+    "showGrid": true
+  },
+  "guests": [
+    {
+      "id": "guest_ana",
+      "name": "Ana Silva",
+      "groupId": "group_family",
+      "groupName": "Family",
+      "vip": true
+    },
+    {
+      "id": "guest_ravi",
+      "name": "Ravi Patel",
+      "groupId": "group_friends",
+      "groupName": "Friends",
+      "accessibility": true
+    }
+  ],
+  "groups": [
+    {
+      "id": "group_family",
+      "name": "Family",
+      "color": "#0f766e"
+    },
+    {
+      "id": "group_friends",
+      "name": "Friends",
+      "color": "#2563eb"
+    }
+  ],
+  "objects": [
+    {
+      "id": "stage_fixture",
+      "type": "stage",
+      "x": 320,
+      "y": 36,
+      "width": 260,
+      "height": 72,
+      "rotation": 0,
+      "label": "Stage",
+      "fill": "#f7d783",
+      "stroke": "#c58a15"
+    },
+    {
+      "id": "table_fixture_head",
+      "type": "table",
+      "x": 360,
+      "y": 240,
+      "width": 180,
+      "height": 96,
+      "rotation": 0,
+      "label": "Head Table",
+      "fill": "#ffffff",
+      "stroke": "#0f766e",
+      "shape": "rectangular",
+      "tableNumber": "1",
+      "tableName": "Head Table",
+      "chairMode": "manual",
+      "seatCount": 4,
+      "perSide": {
+        "top": 2,
+        "right": 0,
+        "bottom": 2,
+        "left": 0
+      },
+      "seats": [
+        {
+          "id": "table_fixture_head_top_1",
+          "label": "1",
+          "guestId": "guest_ana",
+          "side": "top"
+        },
+        {
+          "id": "table_fixture_head_top_2",
+          "label": "2",
+          "guestId": "guest_ravi",
+          "side": "top"
+        },
+        {
+          "id": "table_fixture_head_bottom_1",
+          "label": "3",
+          "side": "bottom"
+        },
+        {
+          "id": "table_fixture_head_bottom_2",
+          "label": "4",
+          "side": "bottom"
+        }
+      ],
+      "mainTable": true
+    }
+  ],
+  "incompatiblePairs": []
+}

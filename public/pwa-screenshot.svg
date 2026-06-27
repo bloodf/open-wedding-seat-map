@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" role="img" aria-label="Wedding Seat Map placeholder screenshot">
+  <rect width="1280" height="720" fill="#f8fafc"/>
+  <rect x="48" y="48" width="1184" height="624" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="4"/>
+  <rect x="88" y="92" width="260" height="42" rx="8" fill="#0f766e"/>
+  <rect x="88" y="166" width="184" height="24" rx="6" fill="#94a3b8"/>
+  <rect x="88" y="212" width="214" height="24" rx="6" fill="#cbd5e1"/>
+  <rect x="372" y="92" width="820" height="540" rx="10" fill="#ecfeff" stroke="#99f6e4" stroke-width="3"/>
+  <circle cx="782" cy="338" r="72" fill="#ffffff" stroke="#0f766e" stroke-width="8"/>
+  <circle cx="782" cy="238" r="22" fill="#f4c95d"/>
+  <circle cx="882" cy="338" r="22" fill="#f4c95d"/>
+  <circle cx="782" cy="438" r="22" fill="#f4c95d"/>
+  <circle cx="682" cy="338" r="22" fill="#f4c95d"/>
+  <rect x="520" y="134" width="524" height="64" rx="10" fill="#fde68a" stroke="#d97706" stroke-width="4"/>
+</svg>
